@@ -2,7 +2,7 @@
 
 int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないときエラー表示を行い exit(1) とする。 
 {
-  int y;
+  double y; //intからdoubleに変えた
   if( x <= 0 ){
     printf("エラー：0以上の値ではありません in myRoot()\n");　      
     exit(1);
@@ -13,7 +13,7 @@ int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないと�
 
 int main(void)
 {
-  int i;
+  int i = 0; //iに0を代入
   double *x = (double *)malloc(sizeof(double) * 100);
 
   while( i <= 100 ){
